@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr 2fr); */
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 1em;
+            grid-auto-rows: minmax(150px, auto);
+        }
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+        /* style for nested grid */
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+        }
+        .nested > div {
+            border: 1px solid crimson;
+        }
+        .nested > div:nth-child(odd) {
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum aliquam nesciunt deleniti, nobis aut laudantium obcaecati sed optio blanditiis! Aperiam deleniti consequuntur voluptate vitae amet ea et in iusto voluptates ad porro nisi repellendus repudiandae dicta eius dolorum ex quae beatae rerum atque, nam optio cum. Sint, incidunt voluptatibus hic quae est, tenetur explicabo non quis inventore fuga similique accusantium velit cum consectetur quaerat consequuntur commodi illum. Unde omnis, expedita, voluptatem in placeat explicabo hic cum voluptatibus debitis fuga veniam exercitationem. Nostrum dolor corporis, necessitatibus deleniti totam officia fugiat amet magni a alias impedit at maiores quaerat ullam magnam.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius esse culpa dicta dolores. Eligendi amet eveniet ratione, perspiciatis id fugiat? Esse eaque nobis corrupti inventore odio reprehenderit aliquam explicabo in harum. Dolore minus alias distinctio quos expedita laudantium ipsam reiciendis.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum aliquam nesciunt deleniti, nobis aut laudantium obcaecati sed optio blanditiis! Aperiam deleniti consequuntur voluptate vitae amet ea et in iusto voluptates ad porro nisi repellendus repudiandae dicta eius dolorum ex quae beatae rerum atque, nam optio cum. Sint, incidunt voluptatibus hic quae est, tenetur explicabo non quis inventore fuga similique accusantium velit cum consectetur quaerat consequuntur commodi illum. Unde omnis, expedita, voluptatem in placeat explicabo hic cum voluptatibus debitis fuga veniam exercitationem. Nostrum dolor corporis, necessitatibus deleniti totam officia fugiat amet magni a alias impedit at maiores quaerat ullam magnam.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius esse culpa dicta dolores. Eligendi amet eveniet ratione, perspiciatis id fugiat? Esse eaque nobis corrupti inventore odio reprehenderit aliquam explicabo in harum. Dolore minus alias distinctio quos expedita laudantium ipsam reiciendis.
+        </div>
+        <div class="nested">
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, culpa.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque iure voluptate inventore harum sed.</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, culpa.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque iure voluptate inventore harum sed.</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, autem?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum aliquam nesciunt deleniti, nobis aut laudantium obcaecati sed optio blanditiis! Aperiam deleniti consequuntur voluptate vitae amet ea et in iusto voluptates ad porro nisi repellendus repudiandae dicta eius dolorum ex quae beatae rerum atque, nam optio cum. Sint, incidunt voluptatibus hic quae est, tenetur explicabo non quis inventore fuga similique accusantium velit cum consectetur quaerat consequuntur commodi illum. Unde omnis, expedita, voluptatem in placeat explicabo hic cum voluptatibus debitis fuga veniam exercitationem. Nostrum dolor corporis, necessitatibus deleniti totam officia fugiat amet magni a alias impedit at maiores quaerat ullam magnam.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius esse culpa dicta dolores. Eligendi amet eveniet ratione, perspiciatis id fugiat? Esse eaque nobis corrupti inventore odio reprehenderit aliquam explicabo in harum. Dolore minus alias distinctio quos expedita laudantium ipsam reiciendis.
+        </div>
+    </div>
+</body>
+</html>
